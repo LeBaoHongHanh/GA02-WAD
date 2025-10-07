@@ -1,0 +1,163 @@
+/* Reset cơ bản */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #f0f4ff, #e6ecff);
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background: linear-gradient(90deg, #004080, #0073e6);
+  color: #fff;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0px 3px 8px rgba(0,0,0,0.2);
+}
+
+header h1 {
+  font-size: 2.2em;
+  margin-bottom: 8px;
+}
+
+header p {
+  font-size: 1.1em;
+  font-weight: 300;
+}
+
+/* Section */
+section {
+  width: 85%;
+  margin: 25px auto;
+  padding: 25px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+section:hover {
+  transform: translateY(-3px);
+}
+
+/* Danh sách */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 8px 0;
+}
+
+ul li a {
+  display: block;
+  padding: 10px;
+  background: #f5f7ff;
+  border-left: 5px solid #0073e6;
+  border-radius: 6px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+ul li a:hover {
+  background: #e0ebff;
+  transform: translateX(5px);
+  color: #004080;
+}
+
+/* Ảnh nhóm */
+.group-photo {
+  display: block;
+  max-width: 650px;
+  width: 100%;
+  margin: 15px auto;
+  border-radius: 15px;
+  border: 3px solid #0073e6;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.image-note {
+  margin-top: 12px;
+  font-style: italic;
+  font-size: 0.95em;
+  text-align: center;
+  color: #555;
+}
+
+/* Trang thành viên */
+/* Container trang thành viên: chia 2 cột */
+.member-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  width: 85%;
+  margin: 30px auto;
+  padding: 30px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Thông tin cá nhân bên trái */
+.member-info {
+  flex: 1;
+}
+
+.member-info h2 {
+  font-size: 1.8em;
+  color: #004080;
+  margin-bottom: 15px;
+}
+
+.member-info p {
+  font-size: 1.1em;
+  margin: 8px 0;
+}
+
+/* Ảnh profile bên phải */
+.member-photo {
+  flex: 0 0 250px;
+  text-align: right;
+}
+
+.profile-photo {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #0073e6;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Nút quay lại căn giữa */
+footer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Link quay lại */
+.back-link {
+  display: inline-block;
+  margin: 25px auto;
+  padding: 12px 18px;
+  text-decoration: none;
+  color: #fff;
+  background: #0073e6;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.back-link:hover {
+  background: #004080;
+}
